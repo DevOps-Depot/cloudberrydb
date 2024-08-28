@@ -63,8 +63,8 @@ s/\(cdbdisp_async\.c:\d+\)/\(cdbdisp_async\.c:LINE_NUM\)/
 m/tx:\s+\d+/
 s/tx:\s+\d+/tx: ##/
 
-m/lsn: \d\/[0-9a-fA-F]+, prev \d\/[0-9a-fA-F]+/
-s/lsn: \d\/[0-9a-fA-F]+, prev \d\/[0-9a-fA-F]+/lsn: #\/########, prev #\/########/
+m/lsn: [0-9a-fA-F]\/[0-9a-fA-F]+, prev [0-9a-fA-F]\/[0-9a-fA-F]+/
+s/lsn: [0-9a-fA-F]\/[0-9a-fA-F]+, prev [0-9a-fA-F]\/[0-9a-fA-F]+/lsn: #\/########, prev #\/########/
 
 m/rel \d+\/\d+\/\d+/
 s/rel \d+\/\d+\/\d+/rel ####\/######\/######/
